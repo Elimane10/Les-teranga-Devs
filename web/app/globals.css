@@ -505,3 +505,21 @@ a:hover {
   background: #FEE2E2;
   color: #991B1B;
 }
+
+/* Fix navigation header */
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-nav a {
+  color: white;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.header-nav a:hover {
+  color: var(--accent-light);
+}
