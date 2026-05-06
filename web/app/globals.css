@@ -510,14 +510,16 @@ a:hover {
 
 .header-nav {
   display: flex;
+  gap: 30px;
   align-items: center;
-  gap: 20px;
 }
 
 .header-nav a {
-  color: white;
-  font-weight: 600;
-  white-space: nowrap;
+  color: white !important;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.2s;
 }
 
 .header-nav a:hover {
