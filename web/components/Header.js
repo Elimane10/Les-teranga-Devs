@@ -7,8 +7,10 @@ export default function Header() {
         <Link href="/" className="header-logo">
           🍛 Terranga<span>Food</span>
         </Link>
+
         <nav className="header-nav">
           <Link href="/">Restaurants</Link>
+          <Link href="/mes-commandes">Mes commandes</Link>
         </nav>
       </div>
     </header>

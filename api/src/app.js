@@ -8,7 +8,7 @@ const fs = require('fs');
 // Charger les variables d'environnement de manière conditionnelle
 // En local : charge .env s'il existe
 // En Docker : utilise les variables déjà présentes dans l'environnement
-const envPath = path.resolve(__dirname, '../../.env');
+const envPath = path.resolve(__dirname, '../.env');
 if (fs.existsSync(envPath)) {
   require('dotenv').config({ path: envPath });
   console.log('📁 .env chargé depuis le fichier (mode local)');

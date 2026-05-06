@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 const path = require('path');
 const fs = require('fs');
+require('dotenv').config({ path: './.env' });
 
 // Chargement conditionnel de .env (local vs Docker)
 const envPath = path.resolve(__dirname, '../../../.env');

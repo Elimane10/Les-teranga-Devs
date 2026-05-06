@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import RestaurantCard from '../components/RestaurantCard';
 import { getRestaurants } from '../lib/api';
 
@@ -19,6 +20,13 @@ export default async function HomePage() {
           Découvrez les meilleurs restaurants de Dakar et commandez vos plats
           préférés en quelques clics.
         </p>
+
+        {/* 🔥 BOUTON AJOUTÉ */}
+        <Link href="/mes-commandes">
+          <button className="btn-commander" style={{ marginTop: '15px' }}>
+            Mes commandes
+          </button>
+        </Link>
       </section>
 
       <section className="container">
@@ -33,8 +41,7 @@ export default async function HomePage() {
           <div className="loading">
             <p>Aucun restaurant trouvé.</p>
             <p style={{ fontSize: '0.9rem', marginTop: '8px', color: '#6B7280' }}>
-              Lancez <code>npm run seed</code> dans le dossier <code>api/</code> pour
-              ajouter des données.
+              Lancez <code>npm run seed</code> dans le dossier <code>api/</code>
             </p>
           </div>
         ) : (
